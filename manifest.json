@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube Time Tracker",
+  "version": "1.0",
+  "description": "Tracks time spent on YouTube.",
+  "permissions": ["tabs", "storage"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "16": "icon.png"
+  }
+}

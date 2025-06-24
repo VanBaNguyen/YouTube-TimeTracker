@@ -1,0 +1,53 @@
+body {
+  background: #181818;
+  color: #fff;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 220px;
+  padding: 24px 16px 16px 16px;
+  text-align: center;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+}
+
+h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.timer {
+  font-size: 2em;
+  letter-spacing: 2px;
+  margin: 10px 0 18px 0;
+  background: #222;
+  padding: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+}
+
+.reset-btn {
+  background: #ff4444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 18px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+  transition: background 0.2s;
+}
+
+.reset-btn:hover {
+  background: #cc0000;
+}
