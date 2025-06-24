@@ -10,8 +10,17 @@
       <img src="icon.png" alt="YouTube Icon" class="icon" />
       <h2>YouTube Time Tracker</h2>
       <div id="timer" class="timer">00:00:00</div>
-      <div style="font-size: 0.8em; color: #ccc;" id="date"></div>
-      <button id="reset" class="reset-btn">Reset</button>
+      <button id="reset" class="reset-btn">Reset Today</button>
+      <button id="history-btn" class="history-btn">History</button>
+      <button id="clear-history-btn" class="clear-btn">Clear History</button>
+      <div id="history-panel" class="history-panel" style="display:none;">
+          <h3>Daily History</h3>
+          <ul id="history-list"></ul>
+        <div id="clear-confirm" class="confirm-panel" style="display:none;">
+      <div>Clear all history?</div>
+          <button id="confirm-yes" class="confirm-btn yes">Yes</button>
+          <button id="confirm-no" class="confirm-btn no">No</button>
+      </div>
     </div>
     <script src="popup.js"></script>
   </body>
