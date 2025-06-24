@@ -6,20 +6,19 @@ function format(ms) {
   return `${hours}:${minutes}:${seconds}`;
 }
 
-let interval = null;
-
 async function updateTimer() {
   // Get the stored time
-  const result = await browser.storage.local.get('youtubeTime');
+  const result = await browser.storage.local.get(['youtubeTime', 'date']);
   let baseTime = result.youtubeTime || 0;
+  let date = result.date || "";
 
   // Ask background if timer is running and if so, get live time
   browser.runtime.sendMessage("getLiveTimer").then(response => {
     let running = response.running;
     let live = response.live || 0;
     let total = baseTime + (running ? live : 0);
-
     document.getElementById('timer').textContent = format(total);
+    document.getElementById('date').textContent = date;
   });
 }
 
